@@ -3,18 +3,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #4e4e4e; /* Grey Theme */
-    color: #80ff80; /* Softer Green Text */
+    background-color: #ffffff; /* Dark Grey Theme */
+    color: #1a3d6c; /* Softer Green Text */
    line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #2a2a2a;
+    background-color: #ffffff;
     padding: 20px;
     text-align: center;
-    color: #80ff80;
-    border-bottom: 3px solid #66cc66;
+    color: #ff6f61;
+    border-bottom: 3px solid #ff6f61;
 }
 
 header h1 {
@@ -23,7 +23,7 @@ header h1 {
 
 /* Navigation */
 nav {
-    background: #333333;
+    background: #1a3d6c;
     padding: 10px;
 }
 
@@ -40,7 +40,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #80ff80;
+    color: #ffffff;
     text-decoration: none;
     padding: 5px 10px;
 }
@@ -55,14 +55,14 @@ nav ul li a:hover {
 section {
     padding: 20px;
     margin: 20px;
-    background: #2a2a2a;
+    background: #ffffff;
     border-radius: 8px;
 }
 
 section h2 {
-    border-bottom: 2px solid #66cc66;
+    border-bottom: 2px solid #ff6f61;
     padding-bottom: 5px;
-    color: #80ff80;
+    color: #1a3d6c;
 }
 
 /* About Section */
@@ -76,11 +76,11 @@ section h2 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid #66cc66;
+    border: 2px solid #1a3d6c;
 }
 
 .about-content p {
-    color: #b3ffb3; /* Softer shade of green for readability */
+    color: #1a3d6c; /* Softer shade of green for readability */
     flex: 1;
 }
 
@@ -117,3 +117,62 @@ footer {
         margin-bottom: 15px;
     }
 }
+
+/* Button Style */
+.btn {
+    display: inline-block;
+    background-color: #66cc66;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #80ff80;
+}
+
+/* Course Grid Styling */
+.course-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between columns */
+    margin-top: 20px;
+}
+
+/* Individual Columns */
+.course-column {
+    flex: 1; /* Equal width for each column */
+    background-color: #f9f9f9; /* Light background for better readability */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-column h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.course-column ol {
+    padding-left: 20px;
+}
+
+.course-column li {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-grid {
+        flex-direction: column; /* Stack the columns vertically on smaller screens */
+    }
+}
+
+
